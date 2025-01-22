@@ -25,3 +25,9 @@ function actualizarListaAmigos() {
 function limpiarInput() {
     document.getElementById('amigo').value = "";
 }
+
+function sortearAmigo() {
+    let indiceAmigo = parseInt(Math.floor(Math.random() * listaAmigos.length))
+    let nombreAmigo = listaAmigos[indiceAmigo];
+    document.getElementById("resultado").innerHTML = nombreAmigo;
+}
